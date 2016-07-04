@@ -42,13 +42,13 @@ void UserInterface::run() {
 			cin >> buf;
 			if (checkIsNumber(buf) == false)
 				throw "Expected number input!";
-			x = atoi(buf); // poate genera exceptii daca se introduce altcv decat cifre
+			x = atoi(buf); 
 
 			cout << "Enter second number" << endl;
 			cin >> buf;
 			if (checkIsNumber(buf) == false)
 				throw "Expected number input!";
-			y = atoi(buf); // poate genera exceptii daca se introduce altcv decat cifre
+			y = atoi(buf); 
 
 			cout << "Rezultat: " << calc.add_naturals(x, y) << endl;
 			break;
